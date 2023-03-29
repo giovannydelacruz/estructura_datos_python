@@ -28,44 +28,44 @@ class Array:
 # menu.__setitem__(2,100)
 # menu.__getitem__(2)
 
-    if __name__ == '__main__':
-        arreglo = Array(3)
-        # Ubicación en memoria
-        print(arreglo) #<__main__.Array object at 0x0000020954591FA0>
+    # if __name__ == '__main__':
+    #     arreglo = Array(3)
+    #     # Ubicación en memoria
+    #     print(arreglo) #<__main__.Array object at 0x0000020954591FA0>
         
-        # Me retorna los espacios vacíos del array, los hoyos de para las plantas.
-        print(arreglo.items) #[None, None, None]
+    #     # Me retorna los espacios vacíos del array, los hoyos de para las plantas.
+    #     print(arreglo.items) #[None, None, None]
         
 
-        # Para llenar los datos debo usar .items o lista vacía,
-        # para poder acceder a los elementos del arreglo.
-        # Aquí evidencio como se llenan los datos.
-        # [1, None, None]
-        # [1, 2, None]
-        # [1, 2, 3]
-    for i in range(0, len(arreglo.items)):
-        arreglo.items[i] = i + 1
-        print(arreglo.items)
+    #     # Para llenar los datos debo usar .items o lista vacía,
+    #     # para poder acceder a los elementos del arreglo.
+    #     # Aquí evidencio como se llenan los datos.
+    #     # [1, None, None]
+    #     # [1, 2, None]
+    #     # [1, 2, 3]
+    # for i in range(0, len(arreglo.items)):
+    #     arreglo.items[i] = i + 1
+    #     print(arreglo.items)
 
 
 
-    # Usando los métodos que creamos para el arreglo.
-    length = arreglo.items.__len__()
-    print("El arreglo tiene como largo : "+ str(length))
+    # # Usando los métodos que creamos para el arreglo.
+    # length = arreglo.items.__len__()
+    # print("El arreglo tiene como largo : "+ str(length))
 
-    # Retorno un str
-    strings = arreglo.items.__str__()
-    print(type(strings))
+    # # Retorno un str
+    # strings = arreglo.items.__str__()
+    # print(type(strings))
 
-    # Creo un Objeto lista iterador y lo recorro con next
-    iterador = arreglo.items.__iter__()
-    print(iterador)
-    print(next(iterador))
+    # # Creo un Objeto lista iterador y lo recorro con next
+    # iterador = arreglo.items.__iter__()
+    # print(iterador)
+    # print(next(iterador))
 
-    # Consigo el elemnto en la posición 1
-    consigo_elemento = arreglo.items.__getitem__(1)
-    print(consigo_elemento)
+    # # Consigo el elemnto en la posición 1
+    # consigo_elemento = arreglo.items.__getitem__(1)
+    # print(consigo_elemento)
 
-    # Ingreso un elemento específicado.
-    arreglo.items.__setitem__(1,"Arreglo terminado!")
-    print(arreglo.items) 
+    # # Ingreso un elemento específicado.
+    # arreglo.items.__setitem__(1,"Arreglo terminado!")
+    # print(arreglo.items) 
