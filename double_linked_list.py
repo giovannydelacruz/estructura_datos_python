@@ -1,3 +1,13 @@
+class Node(object):
+    def __init__(self, data, next=None):
+        self.data = data
+        self.next = next
+
+def TwoWayNode(Node):
+    def __init__(self, data, previous = None, next = None):
+        Node.__init__(self, data, next)
+        self.previous = previous
+
 # ! Circle Double Linked List
 class circleDoubleLinkedList():
     def __init__(self):
